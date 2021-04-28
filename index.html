@@ -20,21 +20,25 @@
 		<span id="user-score">0</span>
 		<span id="computer-score">0</span>
 	</div>
-	<!-- message -->
+	<!-- message win-->
 	<div class="result">
 		<p>Paper cover rock. You win!</p>
 	</div>
 	<!-- choose -->
 	<div class="choices">
-		<div class="choice">
-			<img src="./img/hand.png" alt="hand">
-		</div>
-		<div class="choice">
+		<div class="choice" id="rock">
 			<img src="./img/hand-rock.png" alt="hand-rock">
 		</div>
-		<div class="choice">
+		<div class="choice" id="paper">
+			<img src="./img/hand.png" alt="hand">
+		</div>
+		<div class="choice" id="scissors">
 			<img src="./img/hand-scissors.png" alt="hand-scissors">
 		</div>
+	</div>
+	<!-- action message -->
+	<div id="action-message">
+		Make your move.
 	</div>
 	<!-- script -->
 	<script src="./app.js"></script>
