@@ -8,6 +8,7 @@
   --main-border-config: 3px solid #fff;
   --danger-bord-col: #ff041d;
   --access-bord-col: #2afd05;
+  --draw-bord-col: #9b9a9a;
   --hover-color: #222;
 }
 
@@ -102,4 +103,20 @@ header > h1 {
   font-family: var(--main-ff);
   font-size: 24px;
   font-weight: bold;
+}
+
+/* classes for choices */
+.green-glow {
+  border-color: var(--access-bord-col);
+  box-shadow: 0 0 10px #09e226;
+}
+
+.red-glow {
+  border-color: var(--danger-bord-col);
+  box-shadow: 0 0 10px #e23409;
+}
+
+.grey-glow {
+  border-color: var(--draw-bord-col);
+  box-shadow: 0 0 10px #dfdede;
 }
