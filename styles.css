@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;1,400;1,700&display=swap");
+
+:root {
+  --main-color: #25272e;
+  --header-bg-color: #fff;
+  --badge-bg-color: #e2584d;
+  --main-ff: Asap, sans-serif;
+  --main-border-config: 3px solid #fff;
+  --hover-color: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--main-color);
+}
+
+/* header */
+header {
+  background-color: var(--header-bg-color);
+  padding: 20px;
+}
+
+header > h1 {
+  color: var(--main-bg-color);
+  text-align: center;
+  font-family: var(--main-ff);
+}
+
+/* score board */
+.score-board {
+  position: relative;
+  margin: 20px auto;
+  border: var(--main-border-config);
+  border-radius: 4px;
+  width: 30%;
+  color: var(--header-bg-color);
+  font-size: 46px;
+  text-align: center;
+  padding: 15px 20px;
+  font-family: var(--main-ff);
+}
+
+.badge {
+  background-color: var(--badge-bg-color);
+  font-size: 14px;
+  padding: 2px 10px;
+  font-family: var(--main-ff);
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 30px;
+  right: -40px;
+}
+
+/* message win */
+.result {
+  text-align: center;
+  font-family: var(--main-ff);
+  color: var(--header-bg-color);
+  font-size: 46px;
+  font-weight: bold;
+}
+
+/* choose */
+.choices {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.choice {
+  display: inline-block;
+  border: var(--main-border-config);
+  border-radius: 50%;
+  margin: 0 20px;
+  padding: 3px;
+  transition: all 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: var(--hover-color);
+}
+
+/* action message */
+#action-message {
+  text-align: center;
+  color: var(--header-bg-color);
+  font-family: var(--main-ff);
+  font-size: 24px;
+  font-weight: bold;
+}
