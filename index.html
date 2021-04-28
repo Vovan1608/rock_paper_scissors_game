@@ -8,9 +8,34 @@
 	<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+	<!-- header -->
 	<header>
 		<h1>Rock Paper Scissors</h1>
 	</header>
+	<!-- score board -->
+	<div class="score-board">
+		<div id="user-label" class="badge">user</div>
+		<div id="computer-laber" class="badge">machine</div>
+		<!-- scores -->
+		<span id="user-score">0</span>
+		<span id="computer-score">0</span>
+	</div>
+	<!-- message -->
+	<div class="result">
+		<p>Paper cover rock. You win!</p>
+	</div>
+	<!-- choose -->
+	<div class="choices">
+		<div class="choice">
+			<img src="./img/hand.png" alt="hand">
+		</div>
+		<div class="choice">
+			<img src="./img/hand-rock.png" alt="hand-rock">
+		</div>
+		<div class="choice">
+			<img src="./img/hand-scissors.png" alt="hand-scissors">
+		</div>
+	</div>
 	<!-- script -->
 	<script src="./app.js"></script>
 </body>
